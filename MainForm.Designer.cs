@@ -32,8 +32,6 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnSearchStudent = new System.Windows.Forms.Button();
             this.btnViewStudents = new System.Windows.Forms.Button();
-            this.btnUpdateStudent = new System.Windows.Forms.Button();
-            this.btnDeleteStudent = new System.Windows.Forms.Button();
             this.btnAssignCourse = new System.Windows.Forms.Button();
             this.btnEnterMarks = new System.Windows.Forms.Button();
             this.btnCalculateGPA = new System.Windows.Forms.Button();
@@ -55,8 +53,6 @@
             // 
             this.groupBox1.Controls.Add(this.btnSearchStudent);
             this.groupBox1.Controls.Add(this.btnViewStudents);
-            this.groupBox1.Controls.Add(this.btnUpdateStudent);
-            this.groupBox1.Controls.Add(this.btnDeleteStudent);
             this.groupBox1.Controls.Add(this.btnAssignCourse);
             this.groupBox1.Controls.Add(this.btnEnterMarks);
             this.groupBox1.Controls.Add(this.btnCalculateGPA);
@@ -64,7 +60,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(203, 88);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(429, 283);
+            this.groupBox1.Size = new System.Drawing.Size(429, 235);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Student Management";
@@ -72,7 +68,7 @@
             // btnSearchStudent
             // 
             this.btnSearchStudent.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearchStudent.Location = new System.Drawing.Point(238, 211);
+            this.btnSearchStudent.Location = new System.Drawing.Point(16, 150);
             this.btnSearchStudent.Name = "btnSearchStudent";
             this.btnSearchStudent.Size = new System.Drawing.Size(159, 46);
             this.btnSearchStudent.TabIndex = 7;
@@ -90,28 +86,6 @@
             this.btnViewStudents.Text = "View Student";
             this.btnViewStudents.UseVisualStyleBackColor = true;
             this.btnViewStudents.Click += new System.EventHandler(this.button7_Click_1);
-            // 
-            // btnUpdateStudent
-            // 
-            this.btnUpdateStudent.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdateStudent.Location = new System.Drawing.Point(16, 150);
-            this.btnUpdateStudent.Name = "btnUpdateStudent";
-            this.btnUpdateStudent.Size = new System.Drawing.Size(159, 46);
-            this.btnUpdateStudent.TabIndex = 5;
-            this.btnUpdateStudent.Text = "Update Student";
-            this.btnUpdateStudent.UseVisualStyleBackColor = true;
-            this.btnUpdateStudent.Click += new System.EventHandler(this.button6_Click_1);
-            // 
-            // btnDeleteStudent
-            // 
-            this.btnDeleteStudent.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeleteStudent.Location = new System.Drawing.Point(16, 211);
-            this.btnDeleteStudent.Name = "btnDeleteStudent";
-            this.btnDeleteStudent.Size = new System.Drawing.Size(159, 46);
-            this.btnDeleteStudent.TabIndex = 4;
-            this.btnDeleteStudent.Text = "Delete Student";
-            this.btnDeleteStudent.UseVisualStyleBackColor = true;
-            this.btnDeleteStudent.Click += new System.EventHandler(this.button5_Click);
             // 
             // btnAssignCourse
             // 
@@ -165,8 +139,6 @@
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnViewStudents;
-        private System.Windows.Forms.Button btnUpdateStudent;
-        private System.Windows.Forms.Button btnDeleteStudent;
         private System.Windows.Forms.Button btnAssignCourse;
         private System.Windows.Forms.Button btnEnterMarks;
         private System.Windows.Forms.Button btnCalculateGPA;

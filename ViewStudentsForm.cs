@@ -65,5 +65,45 @@ namespace StudentManagementSystem
         {
             LoadStudents();
         }
+
+        private void btnDeleteStudent_Click(object sender, EventArgs e)
+        {
+            if (dgvStudents.SelectedRows.Count > 0)
+            {
+                DialogResult result = MessageBox.Show("Are you sure you want to delete this student?", "Confirm Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                if (result == DialogResult.Yes)
+                {
+                    int studentId = Convert.ToInt32(dgvStudents.SelectedRows[0].Cells["StudentID"].Value);
+
+
+                    try
+                    {
+                        using (MySqlConnection conn = DatabaseHelper.GetConnection())
+                        {
+                            conn.Open();
+                            string sql = "DELETE FROM Students WHERE StudentID = @StudentID";
+                            using (MySqlCommand cmd = new MySqlCommand(sql, conn))
+                            {
+                                cmd.Parameters.AddWithValue("@StudentID", studentId);
+                                cmd.ExecuteNonQuery();
+                            }
+                        }
+
+                        MessageBox.Show("Student deleted successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        LoadStudents(); // Reload data after delete
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error deleting student: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a student to delete.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
     }
 }

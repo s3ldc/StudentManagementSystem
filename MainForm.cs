@@ -22,11 +22,11 @@ namespace StudentManagementSystem
 
         }
 
-        private void button6_Click_1(object sender, EventArgs e)
-        {
-            UpdateStudentForm updateForm = new UpdateStudentForm();
-            updateForm.ShowDialog();
-        }
+        //private void button6_Click_1(object sender, EventArgs e)
+        //{
+        //    UpdateStudentForm updateForm = new UpdateStudentForm();
+        //    updateForm.ShowDialog();
+        //}
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -40,11 +40,11 @@ namespace StudentManagementSystem
             viewForm.ShowDialog();
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-            DeleteStudentForm deleteForm = new DeleteStudentForm();
-            deleteForm.ShowDialog();
-        }
+        //private void button5_Click(object sender, EventArgs e)
+        //{
+        //    DeleteStudentForm deleteForm = new DeleteStudentForm();
+        //    deleteForm.ShowDialog();
+        //}
 
         private void button4_Click_1(object sender, EventArgs e)
         {

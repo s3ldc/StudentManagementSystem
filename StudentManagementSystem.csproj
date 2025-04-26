@@ -117,12 +117,6 @@
       <DependentUpon>CalculateGPAForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DatabaseHelper.cs" />
-    <Compile Include="DeleteStudentForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DeleteStudentForm.Designer.cs">
-      <DependentUpon>DeleteStudentForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="EnterMarksForm.cs">
       <SubType>Form</SubType>
     </Compile>
