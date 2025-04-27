@@ -167,6 +167,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SearchStudentForm.resx">
+      <DependentUpon>SearchStudentForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ViewStudentsForm.resx">
       <DependentUpon>ViewStudentsForm.cs</DependentUpon>
     </EmbeddedResource>
