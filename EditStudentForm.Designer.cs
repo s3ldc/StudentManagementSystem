@@ -151,9 +151,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(35, 155);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 19);
+            this.label3.Size = new System.Drawing.Size(52, 19);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Course:\n";
+            this.label3.Text = "Email:\n";
             // 
             // label2
             // 

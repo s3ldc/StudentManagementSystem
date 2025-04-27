@@ -113,10 +113,10 @@ namespace StudentManagementSystem
                 string name = dgvStudents.SelectedRows[0].Cells[1].Value.ToString();
                 int age = Convert.ToInt32(dgvStudents.SelectedRows[0].Cells[2].Value);
                 string gender = dgvStudents.SelectedRows[0].Cells[3].Value.ToString();
-                string course = dgvStudents.SelectedRows[0].Cells[4].Value.ToString();
+                string email = dgvStudents.SelectedRows[0].Cells[4].Value.ToString();
                 string phone = dgvStudents.SelectedRows[0].Cells[5].Value.ToString();
 
-                EditStudentForm editForm = new EditStudentForm(studentId, name, age, gender, course, phone);
+                EditStudentForm editForm = new EditStudentForm(studentId, name, age, gender, email, phone);
                 editForm.ShowDialog();
 
                 LoadStudents(); // Reload after editing

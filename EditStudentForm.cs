@@ -16,7 +16,7 @@ namespace StudentManagementSystem
     public partial class EditStudentForm : Form
     {
         private int studentId;
-        public EditStudentForm(int id, string name, int age, string gender, string course, string phone)
+        public EditStudentForm(int id, string name, int age, string gender, string email, string phone)
         {
             InitializeComponent();
             studentId = id;
@@ -24,7 +24,7 @@ namespace StudentManagementSystem
             txtName.Text = name;
             txtAge.Text = age.ToString();
             txtGender.Text = gender;
-            txtCourse.Text = course;
+            txtCourse.Text = email;
             txtPhone.Text = phone;
         }
 
@@ -43,22 +43,22 @@ namespace StudentManagementSystem
             string name = txtName.Text;
             int age = int.Parse(txtAge.Text);
             string gender = txtGender.Text;
-            string course = txtCourse.Text;
+            string email = txtCourse.Text;
             string phone = txtPhone.Text;
 
             try
             {
-                string connectionString = "server=localhost;user=root;password=yourpassword;database=student_db;";
+                string connectionString = "server=localhost;user=root;password=tiger;database=StudentDB;";
                 using (MySqlConnection conn = new MySqlConnection(connectionString))
                 {
                     conn.Open();
-                    string sql = "UPDATE Students SET Name=@Name, Age=@Age, Gender=@Gender, Course=@Course, Phone=@Phone WHERE StudentID=@StudentID";
+                    string sql = "UPDATE Students SET Name=@Name, Age=@Age, Gender=@Gender, Email=@Email, Phone=@Phone WHERE StudentID=@StudentID";
                     using (MySqlCommand cmd = new MySqlCommand(sql, conn))
                     {
                         cmd.Parameters.AddWithValue("@Name", name);
                         cmd.Parameters.AddWithValue("@Age", age);
                         cmd.Parameters.AddWithValue("@Gender", gender);
-                        cmd.Parameters.AddWithValue("@Course", course);
+                        cmd.Parameters.AddWithValue("@Email", email);
                         cmd.Parameters.AddWithValue("@Phone", phone);
                         cmd.Parameters.AddWithValue("@StudentID", studentId);
 
