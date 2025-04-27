@@ -33,6 +33,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnDeleteStudent = new System.Windows.Forms.Button();
+            this.btnUpdateStudent = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,7 +76,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(621, 375);
+            this.button2.Location = new System.Drawing.Point(612, 375);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(116, 42);
             this.button2.TabIndex = 3;
@@ -86,7 +87,7 @@
             // btnDeleteStudent
             // 
             this.btnDeleteStudent.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeleteStudent.Location = new System.Drawing.Point(266, 375);
+            this.btnDeleteStudent.Location = new System.Drawing.Point(245, 375);
             this.btnDeleteStudent.Name = "btnDeleteStudent";
             this.btnDeleteStudent.Size = new System.Drawing.Size(116, 42);
             this.btnDeleteStudent.TabIndex = 4;
@@ -94,11 +95,23 @@
             this.btnDeleteStudent.UseVisualStyleBackColor = true;
             this.btnDeleteStudent.Click += new System.EventHandler(this.btnDeleteStudent_Click);
             // 
+            // btnUpdateStudent
+            // 
+            this.btnUpdateStudent.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateStudent.Location = new System.Drawing.Point(419, 375);
+            this.btnUpdateStudent.Name = "btnUpdateStudent";
+            this.btnUpdateStudent.Size = new System.Drawing.Size(116, 42);
+            this.btnUpdateStudent.TabIndex = 5;
+            this.btnUpdateStudent.Text = "Update";
+            this.btnUpdateStudent.UseVisualStyleBackColor = true;
+            this.btnUpdateStudent.Click += new System.EventHandler(this.btnUpdateStudent_Click);
+            // 
             // ViewStudentsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnUpdateStudent);
             this.Controls.Add(this.btnDeleteStudent);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -121,5 +134,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnDeleteStudent;
+        private System.Windows.Forms.Button btnUpdateStudent;
     }
 }
