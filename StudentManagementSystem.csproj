@@ -152,6 +152,9 @@
     <EmbeddedResource Include="AddStudentForm.resx">
       <DependentUpon>AddStudentForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AssignCourseForm.resx">
+      <DependentUpon>AssignCourseForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EditStudentForm.resx">
       <DependentUpon>EditStudentForm.cs</DependentUpon>
     </EmbeddedResource>
