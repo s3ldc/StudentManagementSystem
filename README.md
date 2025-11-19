@@ -27,7 +27,7 @@ This repository contains a Visual Studio solution with modular forms for adding,
 - Assign courses to students.  
 - Enter marks and compute GPA (dedicated form).  
 - View students list and per-student details.  
-- Centralized `DatabaseHelper` helper for data access. :contentReference[oaicite:8]{index=8}
+- Centralized `DatabaseHelper` helper for data access.
 
 ---
 
@@ -35,7 +35,7 @@ This repository contains a Visual Studio solution with modular forms for adding,
 
 - C# (.NET Framework / WinForms)  
 - Visual Studio solution (`.sln`, `.csproj`)  
-- Data persistence: (see **Database setup** below — App.config likely holds connection string). :contentReference[oaicite:9]{index=9}
+- Data persistence: (see **Database setup** below — App.config likely holds connection string).
 
 ---
 
@@ -60,7 +60,7 @@ StudentManagementSystem/
 └── README.md
 ```
 
-(Actual list of files in the repo — forms and helper files — visible in the project root). :contentReference[oaicite:10]{index=10}
+(Actual list of files in the repo — forms and helper files — visible in the project root).
 
 ---
 
@@ -68,7 +68,7 @@ StudentManagementSystem/
 
 - **Windows** (WinForms desktop app).  
 - **Visual Studio** — recommended: Visual Studio 2019 or 2022 (Community / Professional / Enterprise) with the **.NET desktop development** workload installed.  
-- **.NET Framework**: check `StudentManagementSystem.csproj` for the target framework. If unsure, open the `.csproj` in Visual Studio — the target is defined there. :contentReference[oaicite:11]{index=11}
+- **.NET Framework**: check `StudentManagementSystem.csproj` for the target framework. If unsure, open the `.csproj` in Visual Studio — the target is defined there.
 
 Optional:
 - SQL Server / LocalDB / SQL Server Express if the app uses a SQL database. See `App.config` for the connection string in the project root.
@@ -145,5 +145,5 @@ If you accept contributions, add a `CONTRIBUTING.md`. Suggested minimal policy:
 
 ## Contact
 
-Project maintainer: `s3ldc` (GitHub profile) — see repository for contact details. :contentReference[oaicite:12]{index=12}
+Project maintainer: `s3ldc` (GitHub profile) — see repository for contact details.
 
